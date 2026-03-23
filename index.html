@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atharv | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="loader">
+  <div class="loader-text">ATHARV SRIVASTAVA</div>
+</div>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="container nav-container">
+    <h2>Atharv Srivastava</h2>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div>
+      <a href="resume.pdf" download class="btn small">Resume</a>
+      <button id="theme-toggle" class="btn small">Theme</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container center">
+    <h1 id="typing"></h1>
+    <p>Computer Science student focused on AI/ML, Data Science, and DSA.</p>
+
+    <div class="cta">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="resume.pdf" download class="btn outline">Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container about-grid">
+
+    <div class="about-img">
+      <img src="me.png" alt="profile">
+    </div>
+
+    <div class="about-text">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        Computer Science undergraduate specializing in Machine Learning and Data Science.
+        Skilled in data preprocessing, feature engineering, EDA, and model evaluation.
+        Experienced in building ML-based applications using Flask.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+
+    <div class="timeline">
+
+      <div class="card">
+        <h3>B.Tech - Computer Science</h3>
+        <p>Allenhouse Institute of Technology, Kanpur</p>
+        <span>2023 – Present | GPA: 8.78</span>
+      </div>
+
+      <div class="card">
+        <h3>Schooling</h3>
+        <p>Dr. Virendra Swarup Education Centre, Kanpur</p>
+        <span>Class 12 | Grade: 74%</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Frontend Developer Intern</h3>
+        <p>Codveda Technologies</p>
+        <ul>
+          <li>Built responsive UI using HTML, CSS, JS</li>
+          <li>Integrated APIs with backend team</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Campus Ambassador</h3>
+        <p>Internshala</p>
+        <ul>
+          <li>Promoted programs to 200+ students</li>
+          <li>Increased participation through campaigns</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="grid">
+
+      <div class="card" onclick="openModal('Traffic IQ','ML-based traffic analytics dashboard with route optimization')">
+        <img src="traffic.png" class="project-img">
+        <div class="card-content">
+          <h3>Traffic IQ</h3>
+          <p>ML-based traffic analytics dashboard.</p>
+          <div class="tags">
+            <span>Python</span><span>ML</span><span>Data</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="openModal('AI News Analyzer','News sentiment analysis using NLP')">
+        <img src="ai news.png" class="project-img">
+        <div class="card-content">
+          <h3>AI News Analyzer</h3>
+          <p>NLP-based news sentiment classification.</p>
+          <div class="tags">
+            <span>Python</span><span>NLP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="openModal('Amazon Clone','E-commerce frontend UI clone')">
+        <img src="amazon.png" class="project-img">
+        <div class="card-content">
+          <h3>Amazon Clone</h3>
+          <p>Responsive e-commerce frontend.</p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="openModal('Rock Paper Scissors','Game using JS logic')">
+        <img src="rock.png" class="project-img">
+        <div class="card-content">
+          <h3>Rock Paper Scissors</h3>
+          <p>Interactive browser-based game.</p>
+          <div class="tags">
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="openModal('Currency Converter','Live currency conversion using API')">
+        <img src="currency.png" class="project-img">
+        <div class="card-content">
+          <h3>Currency Converter</h3>
+          <p>Real-time exchange rate converter.</p>
+          <div class="tags">
+            <span>API</span><span>JS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="openModal('Scientific Calculator','Advanced calculator app')">
+        <img src="calc.png" class="project-img">
+        <div class="card-content">
+          <h3>Scientific Calculator</h3>
+          <p>Handles complex math operations.</p>
+          <div class="tags">
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="grid">
+
+      <div class="card cert-card">
+        <img src="advancedata.png" class="cert-img">
+        <div class="cert-content">
+          <h3>Google Advanced Data Analytics</h3>
+          <p>Google</p>
+        </div>
+      </div>
+
+      <div class="card cert-card">
+        <img src="data.png" class="cert-img">
+        <div class="cert-content">
+          <h3>Google Data Analytics</h3>
+          <p>Google</p>
+        </div>
+      </div>
+
+      <div class="card cert-card">
+        <img src="ibm.png" class="cert-img">
+        <div class="cert-content">
+          <h3>Python for Data Science</h3>
+          <p>IBM</p>
+        </div>
+      </div>
+
+      <div class="card cert-card">
+        <img src="meta.png" class="cert-img">
+        <div class="cert-content">
+          <h3>Frontend Development</h3>
+          <p>Meta</p>
+        </div>
+      </div>
+
+      <div class="card cert-card">
+        <img src="microsoft.png" class="cert-img">
+        <div class="cert-content">
+          <h3>Microsoft Certification</h3>
+          <p>Microsoft</p>
+        </div>
+      </div>
+
+      <div class="card cert-card">
+        <img src="ml.png" class="cert-img">
+        <div class="cert-content">
+          <h3>Machine Learning</h3>
+          <p>Coursera</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="publications" class="section">
+  <div class="container">
+    <h2 class="section-title">Publications</h2>
+
+    <div class="grid">
+
+      <div class="card pub-card">
+        <div class="pub-content">
+          <h3>Graph Theory in Recommendation Systems</h3>
+          <p class="pub-meta">
+            ICMLCS-25 (Springer) • Published
+          </p>
+          <p>
+            Explores graph-based techniques to improve recommendation accuracy and scalability.
+          </p>
+        </div>
+      </div>
+
+      <div class="card pub-card">
+        <div class="pub-content">
+          <h3>Intelligence & Encryption for Safer Cyberspace</h3>
+          <p class="pub-meta">
+            ICCNSML-25 (Springer) • Presented
+          </p>
+          <p>
+            Combines AI and cryptography for enhanced cybersecurity solutions.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="container">
+
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+      <div>
+        <h4>Programming</h4>
+        <p>Python, C++</p>
+      </div>
+
+      <div>
+        <h4>Data Science</h4>
+        <p>ML, NLP, Pandas, NumPy, scikit-learn</p>
+      </div>
+
+      <div>
+        <h4>Web</h4>
+        <p>HTML, CSS, JS, Flask</p>
+      </div>
+
+      <div>
+        <h4>Core CS</h4>
+        <p>DSA, DBMS, OOPs, CN</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<footer id="contact" class="footer">
+
+  <div class="container footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <h2>Atharv Srivastava</h2>
+      <p>
+        Building scalable software & intelligent systems.<br>
+        Open to opportunities in AI/ML & Software Development.
+      </p>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-right">
+
+      <h3>Connect</h3>
+
+      <div class="footer-links">
+
+        <a href="mailto:atharvsrivastava24112005@gmail.com">
+          📧 Email
+        </a>
+
+        <a href="https://www.linkedin.com/in/atharv-srivastava-642281293" target="_blank">
+          💼 LinkedIn
+        </a>
+
+        <a href="https://github.com/YOUR_USERNAME" target="_blank">
+          💻 GitHub
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 Atharv Srivastava. Crafted with precision.</p>
+  </div>
+
+</footer>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()" class="close">&times;</span>
+    <h2 id="modal-title"></h2>
+    <p id="modal-desc"></p>
+  </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
