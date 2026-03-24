@@ -28,7 +28,7 @@
     </div>
 
     <div>
-      <a href="resume.pdf" download class="btn small">Resume</a>
+      <a href="Atharv_Srivastava_Resume.pdf" target="_blank" class="btn small">Resume</a>
       <button id="theme-toggle" class="btn small">Theme</button>
     </div>
   </div>
@@ -42,7 +42,9 @@
 
     <div class="cta">
       <a href="#projects" class="btn">View Projects</a>
-      <a href="resume.pdf" download class="btn outline">Download Resume</a>
+      <a href="Atharv_Srivastava_Resume.pdf" download class="btn outline">
+        Download Resume
+      </a>
     </div>
   </div>
 </section>
@@ -126,7 +128,7 @@
 
     <div class="grid">
 
-      <div class="card" onclick="openModal('Traffic IQ','ML-based traffic analytics dashboard with route optimization')">
+      <div class="card" onclick="openModal('Traffic IQ','ML-based traffic analytics dashboard with route optimization','traffic.png')">
         <img src="traffic.png" class="project-img">
         <div class="card-content">
           <h3>Traffic IQ</h3>
@@ -137,8 +139,8 @@
         </div>
       </div>
 
-      <div class="card" onclick="openModal('AI News Analyzer','News sentiment analysis using NLP')">
-        <img src="ai news.png" class="project-img">
+      <div class="card" onclick="openModal('AI News Analyzer','News sentiment analysis using NLP','ai-news.png')">
+        <img src="ai-news.png" class="project-img">
         <div class="card-content">
           <h3>AI News Analyzer</h3>
           <p>NLP-based news sentiment classification.</p>
@@ -148,7 +150,7 @@
         </div>
       </div>
 
-      <div class="card" onclick="openModal('Amazon Clone','E-commerce frontend UI clone')">
+      <div class="card" onclick="openModal('Amazon Clone','E-commerce frontend UI clone','amazon.png')">
         <img src="amazon.png" class="project-img">
         <div class="card-content">
           <h3>Amazon Clone</h3>
@@ -159,7 +161,7 @@
         </div>
       </div>
 
-      <div class="card" onclick="openModal('Rock Paper Scissors','Game using JS logic')">
+      <div class="card" onclick="openModal('Rock Paper Scissors','Game using JS logic','rock.png')">
         <img src="rock.png" class="project-img">
         <div class="card-content">
           <h3>Rock Paper Scissors</h3>
@@ -170,7 +172,7 @@
         </div>
       </div>
 
-      <div class="card" onclick="openModal('Currency Converter','Live currency conversion using API')">
+      <div class="card" onclick="openModal('Currency Converter','Live currency conversion using API','currency.png')">
         <img src="currency.png" class="project-img">
         <div class="card-content">
           <h3>Currency Converter</h3>
@@ -181,7 +183,7 @@
         </div>
       </div>
 
-      <div class="card" onclick="openModal('Scientific Calculator','Advanced calculator app')">
+      <div class="card" onclick="openModal('Scientific Calculator','Advanced calculator app','calc.png')">
         <img src="calc.png" class="project-img">
         <div class="card-content">
           <h3>Scientific Calculator</h3>
@@ -203,7 +205,7 @@
 
     <div class="grid">
 
-      <div class="card cert-card">
+      <div class="card cert-card" onclick="openModal('Google Advanced Data Analytics','Issued by Google','advancedata.png')">
         <img src="advancedata.png" class="cert-img">
         <div class="cert-content">
           <h3>Google Advanced Data Analytics</h3>
@@ -211,7 +213,7 @@
         </div>
       </div>
 
-      <div class="card cert-card">
+      <div class="card cert-card" onclick="openModal('Google Data Analytics','Issued by Google','data.png')">
         <img src="data.png" class="cert-img">
         <div class="cert-content">
           <h3>Google Data Analytics</h3>
@@ -219,7 +221,7 @@
         </div>
       </div>
 
-      <div class="card cert-card">
+      <div class="card cert-card" onclick="openModal('Python for Data Science','Issued by IBM','ibm.png')">
         <img src="ibm.png" class="cert-img">
         <div class="cert-content">
           <h3>Python for Data Science</h3>
@@ -227,7 +229,7 @@
         </div>
       </div>
 
-      <div class="card cert-card">
+      <div class="card cert-card" onclick="openModal('Frontend Development','Issued by Meta','meta.png')">
         <img src="meta.png" class="cert-img">
         <div class="cert-content">
           <h3>Frontend Development</h3>
@@ -235,7 +237,7 @@
         </div>
       </div>
 
-      <div class="card cert-card">
+      <div class="card cert-card" onclick="openModal('Microsoft Certification','Issued by Microsoft','microsoft.png')">
         <img src="microsoft.png" class="cert-img">
         <div class="cert-content">
           <h3>Microsoft Certification</h3>
@@ -243,7 +245,7 @@
         </div>
       </div>
 
-      <div class="card cert-card">
+      <div class="card cert-card" onclick="openModal('Machine Learning','Issued by Coursera','ml.png')">
         <img src="ml.png" class="cert-img">
         <div class="cert-content">
           <h3>Machine Learning</h3>
@@ -367,12 +369,15 @@
 
 </footer>
 
-<!-- MODAL -->
 <div id="modal" class="modal">
   <div class="modal-content">
+
     <span onclick="closeModal()" class="close">&times;</span>
+    <img id="modal-img" class="modal-img" src="" alt="project">
+
     <h2 id="modal-title"></h2>
     <p id="modal-desc"></p>
+
   </div>
 </div>
 

@@ -60,16 +60,22 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ===== MODAL =====
-function openModal(title, desc) {
+function openModal(title, desc, img) {
   const modal = document.getElementById("modal");
   const titleEl = document.getElementById("modal-title");
   const descEl = document.getElementById("modal-desc");
+
+  const imgEl = document.getElementById("modal-img");
 
   if (!modal) return;
 
   modal.classList.add("active");
   titleEl.innerText = title;
   descEl.innerText = desc;
+
+  if (imgEl && img) {
+    imgEl.src = img;
+  }
 }
 
 function closeModal() {
